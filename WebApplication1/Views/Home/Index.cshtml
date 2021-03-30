@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Three js | Load GLTF</title>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <link type="text/css" rel="stylesheet" href="~/Content/ThreeJS/main.css" />
+</head>
+<body>
+    <div id="main">
+
+        <h1 class="h1-heading">Đua xe </h1>
+        <div class="menu">
+            <div class="face">
+                <img class="face-img" src="~/Content/ThreeJS/img/ames.jpg" alt="">
+                <button id="btn" class="btn btn1">Nam</button>
+            </div>
+            <div class="face">
+                <img class="face-img" src="~/Content/ThreeJS/img/case.jpg" alt="">
+                <button id="btn2" class="btn btn1">Tùng</button>
+            </div>
+            <div class="face">
+                <img class="face-img" src="~/Content/ThreeJS/img/pachenko.jpg" alt="">
+                <button id="btn3" class="btn btn1">Dự</button>
+            </div>
+        </div>
+
+
+        <audio id="player" autoplay loop controls hidden>
+            <source src="" type="audio/mp3" />
+        </audio>
+        <audio id="choose">
+            <source src="~/Content/ThreeJS/sounds/choose.mp3" type="audio/mp3" />
+        </audio>
+    </div>
+    <script src="~/Scripts/Load3D.js" type="module"></script>
+    <script>
+        window.onload(function () {
+            alert("x");
+        });
+    </script>
+</body>
+</html>
+
+
